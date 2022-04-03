@@ -5,12 +5,13 @@ body{
 
 #app{
     display: grid;
-    grid-auto-rows: minmax(150px, auto);
+    /* grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
     height:100vh;
     background: #f23557;
     color: #f0d43a;
     justify-content: center;
+    align-content: center;
     grid-gap: 1em;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
@@ -75,10 +76,11 @@ button{
     box-shadow: 2px 4px 5px #444;
 }
 h1{
-    font-size: 36px;
+    font-size: 50px;
 }
 
 textarea{
+    resize: none;
     background:#22b2da;
     color: #f0d43a;
     font-size: 20px;
@@ -91,21 +93,25 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+
+button:hover {
+  background: #3b4add;
+}
 /* Style for Placeholder Text*/
-::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
+::placeholder { /* Firefox, Chrome, Opera */
+    color: #f0d43a;
     font-family: 'Oswald', sans-serif;
 
-} 
-  
-:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #f0d43a;
     font-family: 'Oswald', sans-serif;
 
-} 
-  
-::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #f0d43a;
     font-family: 'Oswald', sans-serif;
 
-} 
+}
